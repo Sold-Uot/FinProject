@@ -4,7 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.util.Log
-import com.example.finproject.SplashScreen.domain.IChekers.iCheckOnlineStatus
+import com.example.finproject.SplashScreen.domain.iChekers.iCheckOnlineStatus
 
 class CheckOnlineStatusImpl(val context: Context) : iCheckOnlineStatus {
     override fun isOnline(): Boolean {

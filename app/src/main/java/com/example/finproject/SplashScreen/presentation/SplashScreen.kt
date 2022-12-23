@@ -2,8 +2,6 @@ package com.example.finproject.SplashScreen.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.ViewModelProvider
 import com.example.finproject.R
 
@@ -18,7 +16,6 @@ class SplashScreen : AppCompatActivity() {
             SplashScreenViewModelFactory(context = applicationContext)
         ).get(SplashScreenViewModel::class.java)
 
-//        Toast.makeText(applicationContext , "Start",Toast.LENGTH_LONG).show()
 
     }
 
@@ -26,7 +23,7 @@ class SplashScreen : AppCompatActivity() {
         super.onStart()
 
 
-        viewModel.checks()
+        viewModel.allCheakers()
     }
 
 }
